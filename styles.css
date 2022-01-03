@@ -72,3 +72,17 @@ body {
     flex: 1;
     margin-left: 110px;
   }
+
+  .contact_content {
+      text-align: center;
+  }
+  
+.contact_img {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.contact_text {
+    display: inline-block;
+    vertical-align: middle;
+}
