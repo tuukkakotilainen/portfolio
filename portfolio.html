@@ -21,5 +21,100 @@
                 <a href ="contact.html">Contact</a>
             </div>
         </div>
+
+        <div class="portfolio_background">
+            <div class="portfolio_content">
+                <br>
+                <h1>Portfolio</h1>
+                <p>Here are some examples of works and projects I have done during my studies.</p>
+                <br>
+                <h2>CSIT identity management self-service portal</h2>
+                <p class="portfolio_p">This project was part of Digiprojekti -course where we had CSIT oy as employer. They were renovating their identity management
+                    service and we students provided them ideas through our work. Our task was to make self-service portal where users could easily
+                    check, modify or delete their personal information. This project was made in a group of four and my area of resposibility was 
+                    frontend coding. Languages used in this project are JavaScript, HTML5 and CSS. The website was never published but here is
+                    link to the Github repository: <a href="https://github.com/tuukkakotilainen/digiprojekti" target="_blank">https://github.com/tuukkakotilainen/digiprojekti</a>
+                </p>
+
+                <div class="slideshow-container">
+                    <div class="csitSlides">
+                      <img src="pictures/csit1.jpg" style="width:100%">
+                    </div>
+                  
+                    <div class="csitSlides">
+                      <img src="pictures/csit2.jpg" style="width:100%">
+                    </div>
+
+                    <div class="csitSlides">
+                        <img src="pictures/csit3.jpg" style="width:100%">
+                      </div>
+
+                      <div class="csitSlides">
+                        <img src="pictures/csit4.jpg" style="width:100%">
+                      </div>
+
+                      <div class="csitSlides">
+                        <img src="pictures/csit5.jpg" style="width:100%">
+                      </div>
+                  
+                    <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+                  </div>
+
+                  <br>
+                  <h2>Green Trip</h2>
+
+                  <div class="slideshow-container">
+                    <div class="gtSlides">
+                      <img src="pictures/gt1.jpg" style="width:30%">
+                    </div>
+                  
+                    <div class="gtSlides">
+                      <img src="pictures/gt2.jpg" style="width:30%">
+                    </div>
+                  
+                    <div class="gtSlides">
+                      <img src="pictures/gt6.jpg" style="width:30%">
+                    </div>
+
+                    <div class="gtSlides">
+                        <img src="pictures/gt3.jpg" style="width:30%">
+                      </div>
+
+                      <div class="gtSlides">
+                        <img src="pictures/gt4.jpg" style="width:30%">
+                      </div>
+
+                      <div class="gtSlides">
+                        <img src="pictures/gt5.jpg" style="width:30%">
+                      </div>
+                  
+                    <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+                  </div>
+            </div>
+        </div>
+
+        <script>
+            var slideIndex = [1,1];
+            var slideId = ["csitSlides", "gtSlides"]
+            showSlides(1, 0);
+            showSlides(1, 1);
+            
+            function plusSlides(n, no) {
+              showSlides(slideIndex[no] += n, no);
+            }
+            
+            function showSlides(n, no) {
+              var i;
+              var x = document.getElementsByClassName(slideId[no]);
+              if (n > x.length) {slideIndex[no] = 1}    
+              if (n < 1) {slideIndex[no] = x.length}
+              for (i = 0; i < x.length; i++) {
+                 x[i].style.display = "none";  
+              }
+              x[slideIndex[no]-1].style.display = "block";  
+            }
+        </script>
     </body>
 </html>
