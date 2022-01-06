@@ -29,6 +29,7 @@
                 <p>Here are some examples of works and projects I have done during my studies.</p>
                 <br>
                 <h2>CSIT identity management self-service portal</h2>
+                <br>
                 <p class="portfolio_p">This project was part of Digiprojekti -course where we had CSIT oy as employer. They were renovating their identity management
                     service and we students provided them ideas through our work. Our task was to make self-service portal where users could easily
                     check, modify or delete their personal information. This project was made in a group of four and my area of resposibility was 
@@ -63,6 +64,13 @@
 
                   <br>
                   <h2>Green Trip</h2>
+                  <br>
+                  <p class="portfolio_p">This work was part of course that focused on prototyping. We made a prototype of mobile app in a group of three.
+                    The idea of the app is to make it easier to choose ecological ways to travell by showing every options carbon footprint.
+                    Users are also encouraged to choose eco friendly options by level system and ranking. The prototype was made with Axure RP 9.
+                    You can take take a closer look at the prototype via this link: <a href="https://aj53td.axshare.com" target="_blank">https://aj53td.axshare.com</a>
+                    The prototype has Finnish and English versions available through the same link.
+                  </p>
 
                   <div class="slideshow-container">
                     <div class="gtSlides">
@@ -92,14 +100,69 @@
                     <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
                     <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
                   </div>
+
+                  <br>
+                  <h2>Digitekniikat</h2>
+                  <br>
+                  <p class="portfolio_p">Digitekniikat is a course that focuses on html and css basics. Here are few screenshots of 
+                    assignments I did on this course.
+                  </p>
+
+                  <div class="slideshow-container">
+                    <div class="digiSlides">
+                      <img src="pictures/digtech1.jpg" style="width:100%">
+                    </div>
+                  
+                    <div class="digiSlides">
+                      <img src="pictures/digtech2.jpg" style="width:100%">
+                    </div>
+
+                    <div class="digiSlides">
+                      <img src="pictures/digtech3.jpg" style="width:100%">
+                    </div>
+                  
+                    <a class="prev" onclick="plusSlides(-1, 2)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1, 2)">&#10095;</a>
+                  </div>
+
+                  <br>
+                  <h2>Digituote</h2>
+                  <br>
+                  <p class="portfolio_p">Digituote course was focusing on service design and productization. One of the main tasks on this course
+                    was to productizate a service. This was done in gropus of three and here is a flyer we made to summarise the
+                    idea of our service.
+                  </p>
+                  <img src="pictures/digituote.jpg" alt="Flyer" style="width:50%">
+
+                  <br>
+                  <h2>Front end programming</h2>
+                  <br>
+                  <p class="portfolio_p">This course focused on using React and making different kind of funcitonalities. The course consisted many smaller tasks and
+                   an exam. Here are few screenshots of one of those smaller tasks.
+                  </p>
+
+                  <div class="slideshow-container">
+                    <div class="frontSlides">
+                      <img src="pictures/react1.jpg" style="width:100%">
+                    </div>
+                  
+                    <div class="frontSlides">
+                      <img src="pictures/react2.jpg" style="width:100%">
+                    </div>
+                  
+                    <a class="prev" onclick="plusSlides(-1, 3)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1, 3)">&#10095;</a>
+                  </div>
             </div>
         </div>
 
         <script>
-            var slideIndex = [1,1];
-            var slideId = ["csitSlides", "gtSlides"]
+            var slideIndex = [1,1,1,1];
+            var slideId = ["csitSlides", "gtSlides", "digiSlides", "frontSlides"]
             showSlides(1, 0);
             showSlides(1, 1);
+            showSlides(1, 2);
+            showSlides(1, 3);
             
             function plusSlides(n, no) {
               showSlides(slideIndex[no] += n, no);
