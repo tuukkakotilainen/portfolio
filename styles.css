@@ -147,13 +147,11 @@ img {vertical-align: middle;}
 
 .next {
   right: 0;
-  border-radius: 3px 0 0 3px;
   padding-right: 40px;
 }
 
 .prev {
     left: 0;
-    border-radius: 3px 0 0 3px;
     padding-left: 40px;
 }
 
@@ -169,6 +167,7 @@ img {vertical-align: middle;}
     top: 0;
 }
 
+/*Responsiveness*/
 
 @media screen and (max-width: 750px) {
    .logo {width: 100%;}
