@@ -38,6 +38,22 @@
 }
 
 
+/*Footer*/
+.footer {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin-right: 10px;
+    z-index: -1;
+}
+
+.footerMobile {
+    text-align: right;
+    visibility: hidden;
+    margin-right: 15px;
+}
+
+
 /*Body*/
 body {
     background-image: url('pictures/background3.jpg');
@@ -46,6 +62,14 @@ body {
     background-position:center; 
     font-family: 'Roboto', sans-serif;
 }
+
+h1 {
+    font-family: 'Staatliches', cursive;
+    letter-spacing: 2px;
+    font-size: 35px;
+    text-decoration: underline;
+}
+
 
 /*Home and Contact*/
 .home_background {
@@ -169,15 +193,30 @@ img {vertical-align: middle;}
 
 /*Responsiveness*/
 
+@media screen and (max-width: 1400px) {
+    .footer {
+        visibility: hidden;
+    }
+    .footerMobile {
+        visibility: visible;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .flex_container {
+        flex-direction: column-reverse;
+    }
+    h1 {
+        text-align: center;
+    }
+}
+
 @media screen and (max-width: 750px) {
    .logo {width: 100%;}
    .header-right {
        float: none;
        margin-left: 20%;
        margin-right: 20%;
-    }
-    .flex_container {
-        flex-direction: column;
     }
 }
 
